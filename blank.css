@@ -1,0 +1,44 @@
+.headline{
+	font-family: High Speed;
+	color:cyan;
+}
+.cyan{
+	color:cyan;
+}
+.bgimg{
+	background-image:url('https://t3.ftcdn.net/jpg/05/71/06/76/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+#bgBlack{
+		background-color: black;
+		background-color: 50%;
+		}
+.Lorum-Text{
+		font-family: High Speed;
+		font-size:15;
+		color:white;
+		}
+.font2{
+		font-family: Arial, Helvetica, sans-serif;
+		color:gray;
+		}
+.table-corner{
+		font-family: High Speed;
+		color:gray;
+		}
+.table-middle{
+		font-family: High Speed;
+		color:white;
+		}
+.table-between{
+	font-family: High Speed;
+	color:red;
+}
+.empty outer{
+	color:gray;
+}
+.empty inner{
+	color:cyan;
+}
