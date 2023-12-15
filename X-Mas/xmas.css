@@ -1,0 +1,32 @@
+.bgimg{
+	background-image:url("https://external-preview.redd.it/RjSwjy2k4iZothNaLU5Lv5e8naTo3dPgNFklZrpe4F4.jpg?auto=webp&s=cc4e93d09cf88ee44d8fec9be7131abed00077db");
+	background-size:100%;
+	background-repeat: no-repeat;
+}
+.snow{
+	background-size:100%;
+	opacity:70%;
+}
+h1{
+	font-family:High Speed;
+	font-size:24;
+	color:lightgray;
+}
+p{
+	font-family:High Speed;
+	font-size:18;
+	color:lightgray;
+}
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
