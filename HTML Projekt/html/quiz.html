@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+	<link href="../css/komp.css" rel="stylesheet">
+	<title>PC-Quiz</title>
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Fragen Game</title>	
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+<!-- navibar-->
+<br>
+	<div>
+		<table class="navibar" align="left">
+			<td width="350px">
+				<img class="techimg" src="../pics/TecheducateGMBH.png">
+			</td>
+			<td>
+				<a href="../home.html"> <p class="font">Home</p></a>
+			</td>
+			<td>
+				<a href="komp.html"> <p class="font">PC-Kompunenten</p></a>
+			</td>
+			<td>
+				<a href="doku.html"> <p class="font">Doku</p></a>
+			</td>
+			<td>
+				<a href="quiz.html"> <p class="font">Quiz</p></a>
+			</td>
+			
+		</table>
+	</div>
+
+    <!-- Quiz -->
+	
+	<form id="frageForm" style="width:1200px;align-content:center; margin:auto; background-color: rgba(255, 255, 255, 0.2);" class="font2">
+        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<fieldset style="align-content:center;">
+            <legend class="font">Frage 1: Was ist eine Festplatte ?</legend>
+            <br>
+			<label>
+                <input type="checkbox" name="frage1" value="GPU"> GPU
+            </label>
+            <label>
+                <input type="checkbox" name="frage1" value="SSD"> SSD
+            </label>
+            <label>
+                <input type="checkbox" name="frage1" value="RAM"> RAM
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="font">Frage 2: Welche Kompunente braucht keinen Strom ?</legend>
+            <br>
+			<label>
+                <input type="checkbox" name="frage2" value="Arbeitsspeicher"> Arbeitsspeicher
+            </label>
+            <label>
+                <input type="checkbox" name="frage2" value="Wärmeleitpaste"> Wärmeleitpaste
+            </label>
+            <label>
+                <input type="checkbox" name="frage2" value="Netzteil"> Netzteil
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="font">Frage 3: Wofür wird ein CaseFan / Gehäuse Lüfter verwendet ?</legend>
+            <br>
+			<label>
+                <input type="checkbox" name="frage3" value="Nutzer"> Um den Nutzer zu kühlen !
+            </label>
+            <label>
+                <input type="checkbox" name="frage3" value="Kompunente"> Um die Kompunente zu kühlen !
+            </label>
+            <label>
+                <input type="checkbox" name="frage3" value="Katze"> Um die Katze fern zuhalten !
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="font">Frage 4: Was ist keine Festplatte ?</legend>
+            <br>
+			<label>
+                <input type="checkbox" name="frage4" value="HDD"> HDD
+            </label>
+            <label>
+                <input type="checkbox" name="frage4" value="M2"> NVME.SSD M2.
+            </label>
+            <label>
+                <input type="checkbox" name="frage4" value="DDR3"> 16GB RAM 2400DIMM DDR3
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="font">Frage 5: In welchen Slot kommt die Grafikkarte ?</legend>
+            <br>
+			<label>
+                <input type="checkbox" name="frage5" value="PCI-E"> PCI-E
+            </label>
+            <label>
+                <input type="checkbox" name="frage5" value="SATA"> SATA
+            </label>
+            <label>
+                <input type="checkbox" name="frage5" value="Venus"> Socket
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="font">Frage 6: Nach welchen Faktor wird ein Gehäuse ausgesucht ?</legend>
+            <br>
+			<label>
+                <input type="checkbox" name="frage6" value="Grafikkarte"> Je nach maße der Grafikkarte !
+            </label>
+            <label>
+                <input type="checkbox" name="frage6" value="CPU"> Nach der besten CPU !
+            </label>
+            <label>
+                <input type="checkbox" name="frage6" value="Motherboard"> Nach Motherboard Formfaktor !
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="font">Frage 7: Was ist der größte Formfaktor?</legend>
+            <br>
+			<label>
+                <input type="checkbox" name="frage7" value="Micro-ITX"> Micro-ITX
+            </label>
+            <label>
+                <input type="checkbox" name="frage7" value="ATX-E"> ATX-E
+            </label>
+            <label>
+                <input type="checkbox" name="frage7" value="Mini-ITX"> Mini-ITX
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend class="font">Frage 8: Macht PCs zusammenbauen Spass ?</legend>
+            <br>
+			<label>
+                <input type="checkbox" name="frage8" value="garnicht"> Garnicht !
+            </label>
+            <label>
+                <input type="checkbox" name="frage8" value="Ja"> Ja !
+            </label>
+            <label>
+                <input type="checkbox" name="frage8" value="HYA"> Hell YEAH !
+            </label>
+        </fieldset>
+
+        <button type="button" onclick="pruefeAntworten()">Antworten überprüfen</button>
+    </form>
+	</div>
+    
+	<script>
+        function pruefeAntworten() {
+            var ausgewaehlteAntworten = {
+                frage1: getCheckedValues('frage1'),
+                frage2: getCheckedValues('frage2'),
+                frage3: getCheckedValues('frage3'),
+                frage4: getCheckedValues('frage4'),
+                frage5: getCheckedValues('frage5'),
+                frage6: getCheckedValues('frage6'),
+                frage7: getCheckedValues('frage7'),
+                frage8: getCheckedValues('frage8')
+            };
+
+            // Hier sind die richtigen Antworten
+            var richtigeAntworten = {
+                frage1: ["SSD"],
+                frage2: ["Wärmeleitpaste"],
+                frage3: ["Kompunente"],
+                frage4: ["DDR3"],
+                frage5: ["PCI-E"],
+                frage6: ["Motherboard"],
+                frage7: ["ATX-E"],
+                frage8: ["HYA"]
+            };
+
+            // Vergleiche die ausgewählten Antworten mit den richtigen Antworten
+            var ergebnisse = {
+                frage1: pruefeFrage(ausgewaehlteAntworten.frage1, richtigeAntworten.frage1),
+                frage2: pruefeFrage(ausgewaehlteAntworten.frage2, richtigeAntworten.frage2),
+                frage3: pruefeFrage(ausgewaehlteAntworten.frage3, richtigeAntworten.frage3),
+                frage4: pruefeFrage(ausgewaehlteAntworten.frage4, richtigeAntworten.frage4),
+                frage5: pruefeFrage(ausgewaehlteAntworten.frage5, richtigeAntworten.frage5),
+                frage6: pruefeFrage(ausgewaehlteAntworten.frage6, richtigeAntworten.frage6),
+                frage7: pruefeFrage(ausgewaehlteAntworten.frage7, richtigeAntworten.frage7),
+                frage8: pruefeFrage(ausgewaehlteAntworten.frage8, richtigeAntworten.frage8)
+            };
+
+            // Gib die Ergebnisse aus
+            console.log("Ergebnisse: ", ergebnisse);
+            alert("Ergebnisse: \n\nFrage 1: " + ergebnisse.frage1 +
+                  "\nFrage 2: " + ergebnisse.frage2 +
+                  "\nFrage 3: " + ergebnisse.frage3 +
+                  "\nFrage 4: " + ergebnisse.frage4 +
+                  "\nFrage 5: " + ergebnisse.frage5 +
+                  "\nFrage 6: " + ergebnisse.frage6 +
+                  "\nFrage 7: " + ergebnisse.frage7 +
+                  "\nFrage 8: " + ergebnisse.frage8);
+        }
+
+        function getCheckedValues(name) {
+            var antworten = document.querySelectorAll('input[name="' + name + '"]:checked');
+            var values = [];
+            antworten.forEach(function (antwort) {
+                values.push(antwort.value);
+            });
+            return values;
+        }
+
+        function pruefeFrage(ausgewaehlteAntworten, richtigeAntworten) {
+            if (arraysEqual(ausgewaehlteAntworten, richtigeAntworten)) {
+                return "Richtig";
+            } else {
+                return "Falsch";
+            }
+        }
+
+        function arraysEqual(arr1, arr2) {
+            return JSON.stringify(arr1) === JSON.stringify(arr2);
+        }
+    </script>
+
+</body>
+
+<br>
+<br>
+
+<footer>
+    <hr>
+    <table class="font2" align="center">
+        <td width="150px">
+            <p>
+            <a href>AGBs</a>
+            </p>
+        </td>
+        <td width="150px">
+            <p>
+                <a href>Datenschutz</a>
+            </p>
+        </td>
+        <td width="150px">
+            <p>
+                <a href>Hinweis zu Cookies</a>
+            </p>
+        </td>
+        <td width="150px">
+            <p>
+                <a href>Impressum</a>
+            </p>
+        </td>
+        <td width="150px">
+            <p>
+                ©2023-2024 TechEducate GmbH
+            </p>
+        </td>
+    </table>
+    <hr>
+</footer>
+
+</html>

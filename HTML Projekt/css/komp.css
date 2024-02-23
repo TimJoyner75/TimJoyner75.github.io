@@ -1,0 +1,119 @@
+html{
+	background-image:url('../pics/tdBG.png');
+	background-size:100%;
+	background-repeat: no-repeat;
+	background-color:white;
+}
+
+.navibar{
+	align-content:´left;
+	text-align:center;
+	text-indent: 50px;
+}
+.font{
+	font-family:High Speed;
+	font-size:20px;
+	color:black;
+}  
+.font2{
+	font-family:lemon milk medium;
+	font-size:13px;
+	color:black;
+}
+.font3{
+	font-family:High Speed;
+	font-size:25px;
+	color:black;
+}
+.kompCells{
+	/*400 pro Cell */
+	width:1200px;
+	text-align:center;
+	border: 1px solid gray;
+	background-color: rgba(255, 255, 255, 0.5); 
+}
+.celldiv{
+	width:400px;
+	height:300px;
+}
+.techpos{
+	float:top;  
+	align-content:left;
+	position:relative;
+	top:2em;
+	
+}
+.techimg{
+	position:relative;
+	width: 230px;
+	height:auto;
+}
+/*
+fieldset{
+	background-color: rgba(255, 255, 255, 0.8);  
+}
+legend{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+*/
+.KIMG{
+	width:auto;
+	height:150px;
+}
+#frageForm{
+	width:1200px;
+	float:center;
+}
+.kompimg{
+	position:relative;
+	float:center;
+	bottom:46;
+	left:37em;
+}
+/* Box */
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  height: 300px;
+  width: 300px;
+  margin: 20px auto;
+  margin-top:20px;
+  border-radius:15px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.5);
+  background: linear-gradient(45deg, rgba(107, 107, 107,1) 0%,rgba(196, 196, 196,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc635', endColorstr='#c0ea67',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  transition: background 0.3s ease-in-out; /* Übergangseffekt für den Hintergrund */
+}
+
+.container:hover {
+  background: linear-gradient(45deg, rgba(107, 107, 107, 0.9) 0%, rgba(45, 104, 186, 1) 99%); /* Farben mit Transparenz für den Hover-Effekt */
+  transform: scale(1.1); /* Leichter Zoom-Effekt (Vergrößerung um 10%) */
+}
+/* Box */
+.tableimg{
+	width:100px;
+	height:auto;
+	position:relative;
+	left:100px;
+}
+.con2{
+  height: 70px;
+  width: 70px;
+  margin: 20px auto;
+  margin-top:20px;
+  border-radius:15px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.5);
+  background: linear-gradient(45deg, rgba(107, 107, 107,1) 0%,rgba(196, 196, 196,1) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bc635', endColorstr='#c0ea67',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  transition: background 0.3s ease-in-out; /* Übergangseffekt für den Hintergrund */
+}
+
+.con2:hover {
+  background: linear-gradient(45deg, rgba(107, 107, 107, 0.9) 0%, rgba(45, 104, 186, 1) 99%); /* Farben mit Transparenz für den Hover-Effekt */
+  transform: scale(1.1); /* Leichter Zoom-Effekt (Vergrößerung um 10%) */
+}
+footer{
+	background-color: rgba(84, 84, 84, 0.556);
+}
