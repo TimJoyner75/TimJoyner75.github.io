@@ -8,26 +8,26 @@ html{
 	align-content:´left;
 	text-align:center;
 	text-indent: 50px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-right: 8%;
+	position:relative;
 }
-.fontnav{
-	font-family:High Speed;
-	font-size:20px;
-	color:black;
-} 
 .font{
 	font-family:High Speed;
-	font-size:20px;
-
+	font-size:1.5vw;
+	text-align: center;
 } 
 .font2{
 	font-family:lemon milk medium;
-	font-size:15px;
-	
+	font-size:1vw;
 }
 .font3{
 	font-family:High Speed;
-	font-size:25px;
+	font-size:1.65vw;
 	color:black;
+	text-align: center;
 }	
 .centerText{
 	float:center;
@@ -49,7 +49,7 @@ html{
 }
 .techimg{
 	position:relative;
-	width: 230px;
+	width: 55%;
 	height:auto;
 }
 footer{
